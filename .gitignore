@@ -1,0 +1,9 @@
+# Database volume managed by Docker
+
+# IDE
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
