@@ -1,5 +1,9 @@
 # Database volume managed by Docker
 
+# Next.js
+next-site/node_modules/
+next-site/.next/
+
 # IDE
 .idea/
 .vscode/
