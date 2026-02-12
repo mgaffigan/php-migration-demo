@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/todos.php",
+        destination: "/todos",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {

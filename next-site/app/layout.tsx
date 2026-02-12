@@ -30,7 +30,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/todos.php">
+              <Link className="nav-link" href="/todos">
                 To-Do List
               </Link>
             </li>

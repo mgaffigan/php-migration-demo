@@ -32,7 +32,7 @@ export default async function Home() {
                   Manage your tasks with full CRUD operations.
                 </p>
                 <p className="text-muted">{todoCount} item(s)</p>
-                <Link href="/todos.php" className="btn btn-primary">
+                <Link href="/todos" className="btn btn-primary">
                   View To-Dos
                 </Link>
               </div>
