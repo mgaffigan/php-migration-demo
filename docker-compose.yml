@@ -6,33 +6,18 @@ services:
     ports:
       - "8080:3000"
     environment:
-      - PHP_BACKEND_URL=http://php:80
       - DB_HOST=db
       - DB_NAME=app
       - DB_USER=app
       - DB_PASS=secret
     depends_on:
-      - php
+      db:
+        condition: service_healthy
     volumes:
       - ./next-site:/app
       - /app/node_modules
       - /app/.next
     command: npm run dev
-
-  php:
-    build: .
-    ports:
-      - "8081:80"  # Direct PHP access for debugging
-    volumes:
-      - ./php-site:/var/www/html
-    depends_on:
-      db:
-        condition: service_healthy
-    environment:
-      - DB_HOST=db
-      - DB_NAME=app
-      - DB_USER=app
-      - DB_PASS=secret
 
   db:
     image: mysql:8.0

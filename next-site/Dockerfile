@@ -10,7 +10,6 @@ COPY . .
 RUN npm run build
 
 ENV NODE_ENV=production
-ENV PHP_BACKEND_URL=http://php:80
 
 EXPOSE 3000
 
