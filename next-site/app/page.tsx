@@ -46,7 +46,7 @@ export default async function Home() {
                   Browse informational notes and messages.
                 </p>
                 <p className="text-muted">{noteCount} note(s)</p>
-                <Link href="/notes.php" className="btn btn-secondary">
+                <Link href="/notes" className="btn btn-secondary">
                   View Notes
                 </Link>
               </div>
